@@ -161,11 +161,119 @@ h2{
 }
 
 .aboutMe > p{
-    margin-top: 3vh;
+    margin-top: -2vh;
     margin-left: 3vw;
     margin-right: 3vw;
 }
 
 .aboutMe > h2{
     margin-top: 10vh;
+}
+
+#button2{
+    margin-top: 3vh;
+    /* margin-bottom: 3vh; */
+    width: 75%;
+    border: 0.0625rem solid;
+}
+
+#button2:hover{
+    background-color: lightgray;
+    color: midnightblue;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 110vh;
+    background-color: midnightblue;
+    color: lightgray;
+    text-align: center;
+}
+
+.contact h3{
+    width: 75%;
+    font-size: 1.9rem;
+    font-family: Righteous , Helvetica, Arial, sans-serif;
+    letter-spacing: .25rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 1vh;
+}
+
+.contact > p{
+    width: 80%;
+    margin-top: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.special{
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(5, 1fr);
+    text-align: center;
+}
+
+#icon{
+    grid-area: 1 / 1 / span 1/ span 1;
+}
+
+#contactMe{
+    grid-area: 1 / 1 / span 1 / -1;
+}
+
+.socialMedia{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.listItem{
+    font-family: Righteous;
+    text-transform: uppercase;
+    border-bottom: 1px solid lightgray;
+    width: 90vw;
+    margin: 2vh 0;
+}
+
+#last{
+    border-bottom: 0px solid #000;
+}
+
+.listItem > a{
+    color: lightgray;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.listItem > a:hover{
+    color: darkgray;
+}
+
+
+.space{
+    height: 3vh;
+}
+
+footer{
+    height: 50vh;
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    flex-direction: column;
+    color: darkgray;
+    text-align: center;
+}
+
+footer > h4 {
+    font-family: Righteous;
+    font-weight: 100;
+    font-size: .9rem;
 }
