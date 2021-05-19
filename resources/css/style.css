@@ -218,6 +218,7 @@ h2{
 #betours{
     grid-area: 5 / 2 / span 5 / span 5;
     width: 80%;
+    max-width: 340px;
     object-fit: contain;
     border: 2px solid maroon;
 }
