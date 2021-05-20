@@ -14,13 +14,10 @@ header{
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(8, 1fr);
     width: 100vw;
-    /* border: 2px solid red; */
     height: 64vh;
     background-color: rgb(25, 25, 113);
     color: lightgray;
     text-align: center;
-    /* justify-content: center;
-    align-items: flex-start; */
     overflow: hidden;
     background-size: cover;
     background-position: bottom;
@@ -42,14 +39,13 @@ header{
 }
 
 #logo:hover{
-    transform: /*scale(1.25)*/ rotate(360deg);
+    transform: rotate(360deg);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
 }
 
 #menuIcon{
     margin-top: 3vh;
-    /* margin-left: 1rem; */
     grid-area: 1 / 8 / span 1/ span 1;
     z-index: 1;
     width: 40%;
@@ -218,7 +214,7 @@ h2{
 #betours{
     grid-area: 5 / 2 / span 5 / span 5;
     width: 80%;
-    max-width: 340px;
+    max-width: 440px;
     object-fit: contain;
     border: 2px solid maroon;
 }
@@ -243,15 +239,16 @@ h2{
 
 }
 
+.aboutMe > h2{
+    margin-top: 10vh;
+}
+
 .aboutMe > p{
     margin-top: -2vh;
     margin-left: 3vw;
     margin-right: 3vw;
 }
 
-.aboutMe > h2{
-    margin-top: 10vh;
-}
 /**********************************************************************************************/
 
 
@@ -339,6 +336,7 @@ h2{
 
 #last{
     border-bottom: 0px solid #000;
+    border-right: 0px;
 }
 
 .listItem > a{
@@ -401,3 +399,139 @@ footer > p{
 }
 
 
+@media screen and (min-width: 640px) {
+    html{
+        font-size: 19px;
+    }
+    header{
+        grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+        height: 92vh;
+    }
+
+    
+    #menuIcon{
+        grid-area: 1 / 10 / span 1/ span 1;
+    }
+
+    #headline{
+        grid-area: 3 / 1 / span 2 / -1; 
+    }
+
+    #description{
+        margin-left: 4%;
+        margin-right: 4%;
+        grid-area:  5/ 1 / span 3 / -1; 
+        /* font-size: 1.45rem; */
+        line-height: 2rem;
+    }
+
+    #button{
+        grid-area:  8 / 1 / span 1 / -1; 
+        width: 40%;
+    }
+
+    main > h2 {
+        margin-top: 10vh;
+    }
+
+    main > p {
+        margin-bottom: 15vh;
+        /* font-size: 1.45rem; */
+        line-height: 170%;
+    }
+
+    .project1{
+        grid-template: repeat(10, 1fr) / repeat(8, 1fr) ;
+        padding-bottom: 10vh;
+    }
+
+    #desc1{
+        grid-area: 2 / 2 / span 2 / span 6;
+        /* font-size: 1.4rem; */
+    }
+    
+    #proj1butt{
+        grid-area: 4 / 3 / span 1 / span 4;
+        margin-top: 2vh;
+    }
+    
+    #betours{
+        margin-top: 3vh;
+        grid-area: 5 / 1 / -1 / -1;
+        max-width: 600px;
+        margin-left: 11vw; /*suspect code. better idea?*/
+    }
+
+    .aboutMe{
+        height: 92vh;
+    }
+
+    .aboutMe > h2{
+        margin-top: 18vh;
+    }
+
+    .aboutMe > p{
+        margin-top: -2vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    #button2{/* contact me button*/
+        margin-top: 4vh;
+        width: 40%;
+        padding: 1.2rem 0;
+    }
+
+    .socialMedia{
+        flex-direction: row;
+        margin-top: 0;
+        align-items: center;
+        width: 80%;
+    }
+    
+    .listItem{
+        font-family: Righteous;
+        font-size: .8rem;
+        border-bottom: 0;
+        border-right: 1px solid lightgray;
+        height: 3vh;
+    }
+
+    .contact{
+        height: 85vh;
+    }
+
+    .contact > p{
+        margin-top: 3vh;
+    }
+
+    footer{
+        display: grid;
+        grid-template: repeat(6, 1fr)/ repeat(7, 1fr);
+    }
+
+    #footh4{
+        grid-area: 2 / 1 / -1 / -1;
+    }
+
+    #twit{
+        grid-area: 3 / 1 / span 1 / span 4;
+    }
+
+    #facebook{
+        grid-area: 3 / 4 / span 1 / span 4;
+    }
+
+    #footp{
+        grid-area: 5 /1 / -1 / -1;
+        font-size: .6rem;
+    }
+
+    .footButt{ /* for buttons at bottom*/
+        width: 65%;
+        margin: 1.75rem auto 0 auto;
+        font-size: .6rem;
+        padding: .35rem 0;
+    }
+}
+/* end */
